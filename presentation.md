@@ -18,7 +18,7 @@ header-includes:
   \newfontfamily\cyrillicfonttt{Fira Mono}
   
   \setsansfont[BoldFont={Fira Sans Bold}, Scale=1.05]{Fira Sans}
-  \setmonofont[Scale=0.95]{Fira Mono}
+  \setmonofont[Scale=0.6]{Fira Mono}
 
   \metroset{outer/numbering=fraction}
   \metroset{background=dark}
@@ -51,7 +51,6 @@ forAll { q1: Pair<@InRange(1, 8) Int, @InRange(1, 8) Int>,
           q2: Pair<@InRange(1, 8) Int, @InRange(1, 8) Int> ->
     val (x1, y1) = q1
     val (x2, y2) = q2
-
     expectEquals(
         ModelImplementation.queenThreatens(x1, y1, x2, y2),
         "x1" to x1, "y1" to y1,
